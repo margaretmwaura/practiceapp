@@ -12,14 +12,14 @@
     <span v-once>This will never change: {{ message }}</span>
     <br>
     <br>
-    <input v-model="message">
+    <input v-model.number="message" type="number">
 </div>
 
 <script>
     var app6 = new Vue({
         el: '#app-6',
         data: {
-            message: 'Hello Vue!'
+            message: 'message'
         }
     })
 </script>
